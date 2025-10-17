@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Idle Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="main-menu" class="screen">
+    <h1>Idle Game</h1>
+    <button id="play-btn">Play</button>
+    <button id="settings-btn">Settings</button>
+  </div>
+
+  <div id="settings" class="screen hidden">
+    <h2>Settings</h2>
+    <label>
+      <input type="checkbox" id="dark-mode-toggle" />
+      Dark mode
+    </label>
+    <br />
+    <button class="back-btn">Back</button>
+  </div>
+
+  <div id="save-select" class="screen hidden">
+    <h2>Save Files</h2>
+    <div id="save-slots"></div>
+    <button id="new-save-btn">Create New Save</button>
+    <br />
+    <button class="back-btn">Back</button>
+  </div>
+
+  <div id="game-screen" class="screen hidden">
+    <h2 id="save-name"></h2>
+    <p>Money: <span id="money">0</span></p>
+    <p>Money per second: <span id="mps">0</span></p>
+    <button id="click-btn">Click for money</button>
+    <div id="upgrades"></div>
+    <br />
+    <button class="back-btn">Back to Menu</button>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
